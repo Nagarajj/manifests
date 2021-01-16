@@ -64,27 +64,27 @@ spec:
         name: manifests
         path: admission-webhook/bootstrap/overlays/application
     name: bootstrap
-  - kustomizeConfig:
-      repoRef:
-        name: manifests
-        path: spark/spark-operator/overlays/application
-    name: spark-operator
+#  - kustomizeConfig:
+#      repoRef:
+#        name: manifests
+#        path: spark/spark-operator/overlays/application
+#    name: spark-operator
   - kustomizeConfig:
       repoRef:
         name: manifests
         path: stacks/kubernetes
     name: kubeflow-apps
-  - kustomizeConfig:
-      repoRef:
-        name: manifests
-        path: knative/installs/generic
-    name: knative
-  - kustomizeConfig:
-      repoRef:
-        name: manifests
-        path: kfserving/installs/generic
-    name: kfserving
+#  - kustomizeConfig:
+#      repoRef:
+#        name: manifests
+#        path: knative/installs/generic
+#    name: knative
+#  - kustomizeConfig:
+#      repoRef:
+#        name: manifests
+#        path: kfserving/installs/generic
+#    name: kfserving
   repos:
   - name: manifests
-    uri: https://github.com/kubeflow/manifests/archive/master.tar.gz
+    uri: https://github.com/Nagarajj/manifests/archive/master.tar.gz
   version: master
