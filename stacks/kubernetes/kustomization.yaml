@@ -6,8 +6,8 @@ resources:
   - ../../admission-webhook/webhook/v3
   - ../../common/centraldashboard/overlays/stacks
   - ../../kubeflow-roles/base
-#  - ../../jupyter/jupyter-web-app/base_v3
-#  - ../../jupyter/notebook-controller/base_v3
+  - ../../jupyter/jupyter-web-app/base_v3
+  - ../../jupyter/notebook-controller/base_v3
   - ../../profiles/base_v3
   # Training Operators
 #  - ../../pytorch-job/pytorch-job-crds/overlays/application
@@ -49,10 +49,10 @@ vars:
     apiVersion: v1
     kind: ConfigMap
     name: kubeflow-config
-- fieldref:
-    fieldpath: metadata.namespace
-  name: katib-ui-namespace
-  objref:
-    kind: Service
-    name: katib-ui
-    apiVersion: v1
+#- fieldref:
+#    fieldpath: metadata.namespace
+#  name: katib-ui-namespace
+#  objref:
+#    kind: Service
+#    name: katib-ui
+#    apiVersion: v1
