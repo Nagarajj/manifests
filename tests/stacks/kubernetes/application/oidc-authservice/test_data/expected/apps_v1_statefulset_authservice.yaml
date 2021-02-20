@@ -32,21 +32,21 @@ spec:
         - name: USERID_CLAIM
           value: email
         - name: OIDC_PROVIDER
-          value: https://federatesys.intuit.com
+          value: http://dex.auth.svc.cluster.local:5556/dex
         - name: OIDC_AUTH_URL
-          value: https://federatesys.intuit.com/as/authorization.oauth2
+          value: /dex/auth
         - name: OIDC_SCOPES
           value: profile email groups
         - name: REDIRECT_URL
-          value: https://kubeflow.mlpdev.a.intuit.com/login/oidc
+          value: /login/oidc
         - name: SKIP_AUTH_URI
-          value: /as
+          value: /dex
         - name: PORT
           value: "8080"
         - name: CLIENT_ID
-          value: MLP-Kubeflow-dev
+          value: kubeflow-oidc-authservice
         - name: CLIENT_SECRET
-          value: Ts6qgz1HCsZIf3gDAknLiPZR8zg2rt8lVpmRUftWCT2qfzm3CkN0CzsxGP8Z6Y6Z
+          value: pUBnBOY80SnXgjibTYM9ZWNzY2xreNGQok
         - name: STORE_PATH
           value: /var/lib/authservice/data.db
         image: gcr.io/arrikto/kubeflow/oidc-authservice:28c59ef
