@@ -7,11 +7,11 @@ configMapGenerator:
 - name: oidc-authservice-parameters
   behavior: merge
   literals:
-  - client_id=MLP-Kubeflow-dev
+  - client_id=
   - oidc_provider=https://federatesys.intuit.com
   - oidc_redirect_uri=https://kubeflow.mlpdev.a.intuit.com/login/oidc
   - oidc_auth_url=https://federatesys.intuit.com/as/authorization.oauth2
-  - application_secret=Ts6qgz1HCsZIf3gDAknLiPZR8zg2rt8lVpmRUftWCT2qfzm3CkN0CzsxGP8Z6Y6Z
+  - application_secret=
   - skip_auth_uri=/as
   - namespace=istio-system
   - userid-header=kubeflow-userid
